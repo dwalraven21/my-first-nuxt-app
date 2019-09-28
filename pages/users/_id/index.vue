@@ -5,7 +5,8 @@
 <script>
 export default {
 	validate (data) {
-		return data.params.id == 1;
+		return /^\d+$/.test(data.params.id)
+		// will test to see if id entered is a number
 	}
 }
 </script>
