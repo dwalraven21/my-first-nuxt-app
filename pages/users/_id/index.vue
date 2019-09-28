@@ -4,6 +4,9 @@
 
 <script>
 export default {
+	validate (data) {
+		return data.params.id == 1;
+	}
 }
 </script>
 
